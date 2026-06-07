@@ -1,0 +1,35 @@
+; Definition-Datei (INI-Format)
+; Wird typischerweise für Produkt- oder Modul-Definitionen verwendet
+
+[Product]
+Name=ConfigWell
+Version=1.0.0
+Author=Marco
+License=MIT
+BuildDate=2026-01-01
+
+[Requirements]
+MinOsVersion=Windows 10
+DotNetVersion=4.8
+MemoryMb=256
+DiskMb=50
+AdminRequired=false
+
+[Features]
+MultiTab=true
+BackupOnSave=true
+SyntaxHighlight=false
+AutoReparse=false
+DragAndDrop=true
+
+[Localization]
+DefaultLanguage=de-DE
+FallbackLanguage=en-US
+DateFormat=dd.MM.yyyy
+NumberFormat=de-DE
+
+[Paths]
+InstallDir=%ProgramFiles%\ConfigWell
+ConfigDir=%AppData%\ConfigWell
+LogDir=%AppData%\ConfigWell\Logs
+BackupDir=%AppData%\ConfigWell\Backups

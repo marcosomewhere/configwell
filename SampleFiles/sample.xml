@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+
+  <!-- Server-Einstellungen -->
+  <server>
+    <host>localhost</host>
+    <port>8080</port>
+    <timeout>30</timeout>
+    <maxConnections>100</maxConnections>
+  </server>
+
+  <!-- Datenbankverbindung -->
+  <database>
+    <host>db.example.com</host>
+    <port>5432</port>
+    <name>myapp_db</name>
+    <poolSize>10</poolSize>
+    <sslEnabled>true</sslEnabled>
+  </database>
+
+  <!-- Logging -->
+  <logging>
+    <level>INFO</level>
+    <file>logs/app.log</file>
+    <maxFileSizeMb>50</maxFileSizeMb>
+    <keepDays>30</keepDays>
+  </logging>
+
+  <!-- Feature-Flags als Attribute -->
+  <features>
+    <feature name="darkMode" value="true" />
+    <feature name="betaUI" value="false" />
+    <feature name="analytics" value="true" />
+  </features>
+
+  <!-- Cache mit Multi-Attribut-Elementen -->
+  <cache backend="redis" host="cache.internal" port="6379" ttlSeconds="3600" />
+
+</settings>
